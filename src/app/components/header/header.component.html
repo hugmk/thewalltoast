@@ -1,0 +1,18 @@
+<div class="header">
+    <div class="header-content">
+        <a class="logo" (click)="goToHomePage()">
+            <img src="../../../assets/images/toast-logo.png" alt="toast">
+            <span class="title">{{ appName | uppercase }}</span>
+        </a>
+        <div class="search-bar">
+            <div class="search-bar-content">
+                <div class="container">
+                    <input type="text" [(ngModel)]="searchTerm" (keydown.enter)="onSearch()" placeholder="Search...">
+                    <a (click)="onSearch()">
+                        <img src="../../../assets/icons/magnifying-glass-solid.svg" alt="search">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
