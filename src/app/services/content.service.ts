@@ -10,8 +10,9 @@ export class ContentService {
   constructor(private http: HttpClient) { }
 
 
-  getSearchedContent(searchTerm: String): Observable<any[]> {
+  getSearchedContent(searchTerm: String, page: number): Observable<any[]> {
     const url = "";
+
     return this.http.get<any[]>(url);
   }
 }
